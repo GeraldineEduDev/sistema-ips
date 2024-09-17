@@ -3,21 +3,32 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     *
+     * @return void
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Crear roles
+        $this->call(RolesTableSeeder::class);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // Crear tipos de servicio
+        $this->call(TiposServicioSeeder::class);
+
+        // Crear estados de factura
+        $this->call(EstadosFacturaSeeder::class);
+
+        // Verificar si el usuario ya existe antes de crearlo
+        if (!User::where('email', 'test@example.com')->exists()) {
+            User::factory()->create([
+                'name' => 'Test User',
+                'email' => 'test@example.com',
+            ]);
+        }
     }
 }
