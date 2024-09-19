@@ -42,14 +42,14 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">UI COMPONENTS</span>
+              <span class="hide-menu">GESTIONES</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ route('clientes.index') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-article"></i>
+                  <i class="ti ti-users"></i>
                 </span>
-                <span class="hide-menu">Buttons</span>
+                <span class="hide-menu">Clientes</span>
               </a>
             </li>
             <li class="sidebar-item">

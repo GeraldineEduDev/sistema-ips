@@ -9,6 +9,9 @@ class Cliente extends Model
 {
     use HasFactory;
 
+    protected $table = 'clientes'; // Nombre de la tabla en la base de datos
+
+    // Define los campos que se pueden rellenar masivamente
     protected $fillable = [
         'tipo_documento',
         'documento',
@@ -20,9 +23,5 @@ class Cliente extends Model
         'direccion',
         'tipo_cliente'
     ];
-
-    public function facturas()
-    {
-        return $this->hasMany(Factura::class);
-    }
 }
+
