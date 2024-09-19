@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pacientes', function (Blueprint $table) {
             $table->id();
             $table->string('tipo_documento', 50);
-            $table->string('documento', 100);
+            $table->string('documento', 100)->unique();
             $table->string('nombres', 255);
             $table->string('apellidos', 255);
             $table->date('fecha_nacimiento');

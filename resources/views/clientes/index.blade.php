@@ -1,5 +1,9 @@
 @extends('components.layout')
 
+@section('title')
+	Clientes
+@stop()
+
 @section('content')
 <div class="container">
     <h1>Listado de Clientes</h1>
@@ -21,7 +25,6 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Tipo de Documento</th>
                 <th>Documento</th>
                 <th>Nombres</th>
@@ -37,7 +40,6 @@
         <tbody>
             @foreach ($clientes as $cliente)
             <tr>
-                <td>{{ $cliente->id }}</td>
                 <td>{{ $cliente->tipo_documento }}</td>
                 <td>{{ $cliente->documento }}</td>
                 <td>{{ $cliente->nombres }}</td>

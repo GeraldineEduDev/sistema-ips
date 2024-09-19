@@ -1,5 +1,9 @@
 @extends('components.layout')
 
+@section('title')
+	Nuevo Cliente
+@stop()
+
 @section('content')
 <div class="container">
     <h1>Crear Nuevo Cliente</h1>

@@ -1,5 +1,9 @@
 @extends('components.layout')
 
+@section('title')
+	Actualizar Cliente
+@stop()
+
 @section('content')
 <div class="container">
     <h1>Editar Cliente</h1>

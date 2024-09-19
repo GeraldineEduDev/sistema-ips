@@ -23,6 +23,15 @@ class DatabaseSeeder extends Seeder
         // Crear estados de factura
         $this->call(EstadosFacturaSeeder::class);
 
+        // Crear registros en Clientes
+        $this->call(ClientesSeeder::class);
+
+        // Crear registros en EPS
+        $this->call(EpsSeeder::class);
+
+        // Crear registros en Pacientes
+        $this->call(PacientesSeeder::class);
+
         // Verificar si el usuario ya existe antes de crearlo
         if (!User::where('email', 'test@example.com')->exists()) {
             User::factory()->create([
