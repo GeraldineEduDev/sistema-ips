@@ -16,13 +16,14 @@ return new class extends Migration
             $table->string('nombres', 255);
             $table->string('apellidos', 255);
             $table->string('tipo_documento', 50);
-            $table->string('documento', 100);
-            $table->string('email', 255);
+            $table->string('documento', 100)->unique();
+            $table->string('email', 255)->unique();
             $table->string('password', 255);
             $table->foreignId('rol_id')->constrained('roles');
-            $table->boolean('estado'); 
+            $table->boolean('estado')->default(true);
             $table->timestamps(); 
         });
+        
     }
 
     /**

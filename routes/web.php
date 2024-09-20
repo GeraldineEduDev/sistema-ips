@@ -8,6 +8,7 @@ use App\Http\Controllers\EstadoFacturaController;
 use App\Http\Controllers\BiologicosController;
 use App\Http\Controllers\MuestraController;
 use App\Http\Controllers\EPSController;
+use App\Http\Controllers\RolController;
 
 Route::get('/', function () {
     return view('index');
@@ -19,6 +20,7 @@ Route::resource('tipos_servicio', TipoServicioController::class);
 Route::resource('estados_factura', EstadoFacturaController::class);
 Route::resource('biologicos', BiologicosController::class);
 Route::resource('muestras', MuestraController::class);
-Route::resource('eps', EPSController::class)->except(['show']);
+Route::resource('eps', EPSController::class);
+Route::resource('roles', RolController::class);
 
 

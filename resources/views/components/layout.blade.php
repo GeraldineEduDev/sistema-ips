@@ -105,11 +105,11 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ route('roles.index') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-login"></i>
+                  <i class="ti ti-user"></i>
                 </span>
-                <span class="hide-menu">Login</span>
+                <span class="hide-menu">Roles</span>
               </a>
             </li>
             <li class="sidebar-item">

@@ -16,12 +16,12 @@ class Usuario extends Model
         'documento', 
         'email',
         'password',
-        'rol',
+        'rol_id',
         'estado'
     ];
 
     public function rol()
     {
-        return $this->belongsTo(Rol::class, 'rol');
+        return $this->belongsTo(Rol::class, 'rol_id');
     }
 }
