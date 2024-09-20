@@ -44,4 +44,9 @@ class Biologico extends Model
     {
         return $this->hasMany(Factura::class);
     }
+
+    public function detalles()
+    {
+        return $this->hasMany(DetalleFactura::class);
+    }
 }

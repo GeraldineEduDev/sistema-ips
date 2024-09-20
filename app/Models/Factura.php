@@ -25,6 +25,10 @@ class Factura extends Model
         'subtotal'
     ];
 
+    protected $casts = [
+        'fecha_facturacion' => 'datetime',
+    ];
+
     public function paciente()
     {
         return $this->belongsTo(Paciente::class);
@@ -53,5 +57,10 @@ class Factura extends Model
     public function muestra()
     {
         return $this->belongsTo(Muestra::class, 'muestra_id');
+    }
+
+    public function detalles()
+    {
+        return $this->hasMany(DetalleFactura::class);
     }
 }

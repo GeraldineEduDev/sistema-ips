@@ -8,6 +8,7 @@ use App\Http\Controllers\EstadoFacturaController;
 use App\Http\Controllers\BiologicosController;
 use App\Http\Controllers\MuestraController;
 use App\Http\Controllers\EPSController;
+use App\Http\Controllers\FacturaController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\UsuarioController;
 
@@ -24,5 +25,6 @@ Route::resource('muestras', MuestraController::class);
 Route::resource('eps', EPSController::class);
 Route::resource('roles', RolController::class);
 Route::resource('usuarios', UsuarioController::class);
+Route::resource('facturas', FacturaController::class);
 
 
