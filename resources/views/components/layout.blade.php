@@ -61,11 +61,11 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="{{ route('biologicos.index') }}" aria-expanded="false">
                 <span>
-                  <i class="ti ti-typography"></i>
+                  <i class="ti ti-vaccine"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">Biologicos</span>
               </a>
             </li>
             <li class="nav-small-cap">
