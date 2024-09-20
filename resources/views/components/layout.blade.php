@@ -61,22 +61,6 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                <span class="hide-menu">Card</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-file-description"></i>
-                </span>
-                <span class="hide-menu">Forms</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
@@ -86,7 +70,23 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">AUTH</span>
+              <span class="hide-menu">CONFIGURACIÓN</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="{{ route('tipos_servicio.index') }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-heart-handshake"></i>
+                </span>
+                <span class="hide-menu">Tipos de Servicios</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="{{ route('estados_factura.index') }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-check"></i>
+                </span>
+                <span class="hide-menu">Estados de Factura</span>
+              </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">

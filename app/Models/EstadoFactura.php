@@ -9,6 +9,8 @@ class EstadoFactura extends Model
 {
     use HasFactory;
 
+    protected $table = 'estados_factura';
+    
     protected $fillable = ['nombre'];
 
     public function facturas()
