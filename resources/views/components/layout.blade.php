@@ -68,6 +68,14 @@
                 <span class="hide-menu">Biologicos</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="{{ route('muestras.index') }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-flask"></i>
+                </span>
+                <span class="hide-menu">Muestras</span>
+              </a>
+            </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">CONFIGURACIÓN</span>
