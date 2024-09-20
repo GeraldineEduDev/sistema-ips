@@ -38,6 +38,9 @@ class DatabaseSeeder extends Seeder
         // Crear registros en Pacientes
         $this->call(PacientesSeeder::class);
 
+        // Crear registros en Usuarios
+        $this->call(UsuariosSeeder::class);
+
         // Verificar si el usuario ya existe antes de crearlo
         if (!User::where('email', 'test@example.com')->exists()) {
             User::factory()->create([

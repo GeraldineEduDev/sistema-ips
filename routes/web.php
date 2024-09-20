@@ -9,6 +9,7 @@ use App\Http\Controllers\BiologicosController;
 use App\Http\Controllers\MuestraController;
 use App\Http\Controllers\EPSController;
 use App\Http\Controllers\RolController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/', function () {
     return view('index');
@@ -22,5 +23,6 @@ Route::resource('biologicos', BiologicosController::class);
 Route::resource('muestras', MuestraController::class);
 Route::resource('eps', EPSController::class);
 Route::resource('roles', RolController::class);
+Route::resource('usuarios', UsuarioController::class);
 
 
