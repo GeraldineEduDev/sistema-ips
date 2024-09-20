@@ -1,12 +1,12 @@
 @extends('components.layout')
 
 @section('title')
-	Nuevo Cliente
+	Agregar Cliente
 @stop()
 
 @section('content')
 <div class="container">
-    <h1>Crear Nuevo Cliente</h1>
+    <h1>Agregar Cliente</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">

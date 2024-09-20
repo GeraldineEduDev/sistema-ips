@@ -10,7 +10,7 @@
 
     <div class="d-flex justify-content-end mb-3">
         <a href="{{ route('clientes.create') }}" class="btn btn-primary">
-            Nuevo Cliente
+            Agregar Cliente
         </a>
     </div>
 
@@ -50,7 +50,7 @@
                 <td>{{ $cliente->direccion }}</td>
                 <td>{{ $cliente->tipo_cliente }}</td>
                 <td>
-                    <a href="{{ route('clientes.edit', $cliente->id) }}" class="btn btn-sm btn-primary">
+                    <a href="{{ route('clientes.edit', $cliente->id) }}" class="btn btn-warning">
                         <i class="ti ti-edit"></i>
                     </a>
                 </td>
@@ -58,7 +58,7 @@
                     <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST" style="display:inline;">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de eliminar este cliente?');">
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de eliminar este cliente?');">
                             <i class="ti ti-trash"></i>
                         </button>
                     </form>

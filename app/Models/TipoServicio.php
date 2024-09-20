@@ -9,6 +9,8 @@ class TipoServicio extends Model
 {
     use HasFactory;
 
+    protected $table = 'tipos_servicio';
+
     protected $fillable = ['nombre'];
 
     public function facturas()

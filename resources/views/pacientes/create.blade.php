@@ -1,5 +1,9 @@
 @extends('components.layout')
 
+@section('title')
+    Agregar Paciente
+@endsection
+
 @section('content')
     <h1>Agregar Paciente</h1>
 

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre', 255);
             $table->string('direccion', 255);
             $table->string('telefono', 50);
-            $table->string('email', 255);
+            $table->string('email', 255)->nullable();
             $table->string('tipo', 50);
             $table->timestamps();
         });
